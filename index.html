@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Math's Game</title>
+		<link rel='stylesheet' href='style.css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id='container'>
+			<div id='box'>
+				<div class='correct'>correct</div>
+				<div class='correct' style="background: red;">try again</div>
+				<!-- score box--->
+				<div id='score-box'>Score: <span>0</span></div>
+				<!-- question box -->
+				<div id='question'>36*89</div>
+				<div id='instruction'>Click on the correct answer</div>
+				<!--answers -->
+				<div id='answers'>
+					<div class='answer'>5</div>
+					<div class='answer'>10</div>
+					<div class='answer'>15</div>
+					<div class='answer'>20</div>
+				</div>
+
+				<!--start or reset --->
+				<div id='start-reset'>Start Game</div>
+				
+				<!-- Time remaining -->
+				<div id='time'>Time remaining: <span>60</span>sec</div>
+
+			</div>
+		</div>
+	</body>
+	<script src='./java.js'></script>
+</html>

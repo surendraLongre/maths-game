@@ -1,0 +1,136 @@
+* {
+	transition: all 0.2s;		
+	user-select: none;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+body {
+	background: radial-gradient(circle, #fff,#ccc);	
+	box-sizing: border-box;
+	
+}
+
+#box {
+	width:62.5vw;
+	aspect-ratio:1.6/1;
+	background: #98CEEB;
+	position: relative;
+	margin: 5vw auto;
+	border-radius: 7px;
+	box-shadow: 0px 4px 0px 0px hsl(201, 67%, 56%);
+	padding: 5px;
+}
+
+#score-box {
+	background: hsl(63, 87%, 76%);
+	width: fit-content;
+	padding:5px;
+	border-radius: 5px;
+	float: right;
+	margin: 10px 5px;
+	box-shadow: 0px 4px 0px 0px hsl(63, 50%, 50%);
+
+}
+
+#question {
+	background: hsl(233, 69%, 77%);
+	width: 85.9375%;
+	margin: 50px  auto;
+	margin-bottom: 0px;
+	height: 47.5%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0px 3px hsl(233,69%, 57%);
+	font-family: monospace;
+}
+
+#instruction {
+	background: hsl(272, 53%, 70%);
+	width: 85.9375%;
+	margin: 10px auto;
+	text-align: center;
+	padding: 15px 0px;
+	border-radius: 5px;
+	box-shadow: 0px 3px hsl(272, 53%, 50%);
+
+
+}
+
+#answers {
+	width: 85.9375%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.answer {
+	background: #ffff;
+	height:15%;
+	width:15%;
+	aspect-ratio: 1/1;
+	border-radius: 5px;
+	box-shadow: 0px 3px #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position:relative;
+	padding: 5px;
+
+}
+
+.answer:hover {
+	top:3px;
+	box-shadow: none;
+	color: white;
+	background: #ccc;
+}
+
+#time {
+	position: absolute;
+	background: hsl(78, 64%, 56%);
+	border-radius: 5px;
+	box-shadow: hsl(78, 44%, 36%);
+	padding: 10px;
+	right: 7px;
+	bottom: 5px;
+	display: none;
+}
+
+#start-reset {
+	margin: 5px auto;
+	background: hsl(203, 69%, 89%);
+	box-shadow: 0px 3px hsl(203, 69%, 69%);
+	border-radius: 5px;
+	width: fit-content;
+	padding: 10px;
+	position: relative;
+
+}
+
+#start-reset:hover {
+	box-shadow: none;
+	top:3px;
+	cursor: pointer;
+	background: hsl(203, 69%, 69%);
+	color: white;
+}
+
+.correct {
+	position: absolute;
+	background: green;
+	padding: 10px;
+	border-radius: 5px;
+	max-width: fit-content; 
+	left:47%;
+	color: white;
+	top:10px;
+	display: none;
+};
+
+
